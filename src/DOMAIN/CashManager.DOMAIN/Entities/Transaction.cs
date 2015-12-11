@@ -9,7 +9,7 @@ namespace CashManager.DOMAIN.Entities
         public DateTimeOffset Updated { get; set; }
         public TransactionType TransactionType { get; set; }
         public TransactionStatus TransactionStatus { get; set; }
-        public BillingMethod BillingPayment { get; set; }
+        public BillingMethod BillingMethod { get; set; }
         public double Price { get; set; }
         public long TransactionReferenceId { get; set; }
         public long UserId { get; set; }
