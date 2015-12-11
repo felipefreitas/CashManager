@@ -17,7 +17,7 @@ namespace CashManager.DATA.EntityFramework.Configurations
             Property(t => t.TransactionType)
                 .IsRequired();
 
-            Property(t => t.BillingPayment)
+            Property(t => t.BillingMethod)
                 .IsRequired();
 
             Property(t => t.Price)

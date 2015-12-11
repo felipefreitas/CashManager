@@ -38,8 +38,24 @@
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commons\Interfaces\ISecurity.cs" />
+    <Compile Include="Engines\OrderEngine.cs" />
+    <Compile Include="Engines\SessionEngine.cs" />
+    <Compile Include="Engines\TransactionEngine.cs" />
+    <Compile Include="Engines\UserEngine.cs" />
+    <Compile Include="Interfaces\IOrderEngine.cs" />
+    <Compile Include="Interfaces\ISessionEngine.cs" />
+    <Compile Include="Interfaces\ITransactionEngine.cs" />
+    <Compile Include="Interfaces\IUserEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DOMAIN\CashManager.DOMAIN\CashManager.DOMAIN.csproj">
+      <Project>{3495ad99-4b49-4a3b-81fb-89e5a0687a90}</Project>
+      <Name>CashManager.DOMAIN</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
